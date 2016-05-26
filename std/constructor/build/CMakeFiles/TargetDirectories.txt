@@ -1,0 +1,1 @@
+/data/sonic/git_workspace/HelloGithub/std/constructor/build/CMakeFiles/Demo.dir
