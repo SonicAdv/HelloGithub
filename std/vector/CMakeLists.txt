@@ -5,12 +5,12 @@ INCLUDE_DIRECTORIES(
     "./include"
 )
 AUX_SOURCE_DIRECTORY(
-			src
-			SRC_PATH
+    src
+    SRC_PATH
 )
 
 ADD_EXECUTABLE(
-		Vector 
-		${SRC_PATH}
+    vector 
+    ${SRC_PATH}
 )
 

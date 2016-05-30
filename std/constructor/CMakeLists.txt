@@ -10,7 +10,7 @@ AUX_SOURCE_DIRECTORY(
 )
 
 ADD_EXECUTABLE(
-		Demo 
+		demo 
 		${SRC_PATH}
 )
 
