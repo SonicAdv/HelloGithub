@@ -1,0 +1,6 @@
+list/build/*
+list/*.swp
+vector/build/*
+vector/*.swp
+constructor/build/*
+constructor/*.swp
