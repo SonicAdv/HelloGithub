@@ -312,19 +312,39 @@ ls: 9;
     for(std::list<int>::iterator it = ls.begin(); it != ls.end(); ++it) {
         std::cout << "ls: " << *it << "; " << std::endl;
     }
-
+    /*
+ls: 9; 
+ls: 100; 
+ls: 200; 
+ls: 200; 
+ls: 200; 
+ls: 300; 
+ls: 300; 
+ls: 300; 
+*/
     std::cout << "-----remove result below: -----" << std::endl;
     ls.remove(9);
     ls.remove_if([](int n){return n==100;});
     for(std::list<int>::iterator it = ls.begin(); it != ls.end(); ++it) {
         std::cout << "ls: " << *it << "; " << std::endl;
     }
+    /*
+ls: 9; 
+ls: 200; 
+ls: 200; 
+ls: 200; 
+ls: 300; 
+ls: 300; 
+ls: 300; 
+*/
 
     std::cout << "-----clear result below: -----" << std::endl;
     ls.clear();
     for(std::list<int>::iterator it = ls.begin(); it != ls.end(); ++it) {
         std::cout << "ls: " << *it << "; " << std::endl;
     }
+    /*
+     */
     
     return 0;
 }

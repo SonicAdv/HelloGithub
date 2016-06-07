@@ -24,21 +24,19 @@ int main(int argc, const char * argv[]) {
     }
     std::cout << "sum: " << sum << std::endl;
 
-    for(std::vector<int>::iterator it = vec.begin(); it != vec.end(); ++it) {
-        if (*it >= 3 && *it <= 6) {
-            std::cout << "vec: " << *it << std::endl;
-        }
+    for(int x:vec) {
+        std::cout << "vec: " << x << std::endl;
     }
 
     //逆序遍历
-/*    for(std::vector<int>::iterator it = vec.rbegin(); it != vec.rend(); ++it) {
+    for(auto it = vec.rbegin(); it != vec.rend(); ++it) {
         if (*it >= 3 && *it <= 6) {
             std::cout << "vec: " << *it << std::endl;
         }
     }
-    */
-    std::cout << "-----insert result below: insert ahead-----" << std::endl;
+    
 
+    std::cout << "-----insert result below: insert ahead-----" << std::endl;
     //头部插入
     std::vector<int>::iterator it_ins = vec.begin();
     vec.insert(it_ins, 100);
