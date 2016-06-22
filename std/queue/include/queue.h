@@ -6,7 +6,7 @@
  * @brief 
  *  
  **/
-struct element {
-    int number;
+struct element_t {
+    int n;
     std::string desc;
 };
